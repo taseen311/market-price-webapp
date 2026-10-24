@@ -1,11 +1,26 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
+import { auth } from './lib/auth'
+import { headers } from 'next/headers'
+import toast from 'react-hot-toast';
 
 // This function can be marked `async` if using `await` inside
-export function proxy(request: NextRequest) {
-  return NextResponse.redirect(new URL('/', request.url))
+export async function  proxy(request: NextRequest) {
+
+  const session = await auth.api.getSession({
+    headers: await headers() // you need to pass the headers object.
+});
+
+const user = session?.user;
+
+if(!user){
+      return NextResponse.redirect(new URL('/', request.url))
+      toast.error("Login first to see details price!")
+}
+
+
 }
 
 export const config = {
-  matcher: ['/profile'],
+  matcher: ['/profile', '/product/:path'],
 }
