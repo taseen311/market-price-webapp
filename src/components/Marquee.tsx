@@ -1,7 +1,8 @@
+
 import MarqueeText from "react-marquee-text";
 import "react-marquee-text/dist/styles.css";
 
-interface Marquee{
+interface Marquee {
   id: number
   image: string
   nameBn: string
@@ -18,11 +19,12 @@ const Marquee = async () => {
   );
   const data: Marquee[] = await res.json();
   console.log(data);
+
   return (
-    <div className="border-y mt-3 p-1 border-gray-800">
+    <div className="border-y mt-3 px-1 py-2 border-gray-800 w-full overflow-hidden">
       <MarqueeText direction="right" duration={15}>
         {data.map((product) => (
-          <span className="py-2 text-xl" key={product.id}>
+          <span className="py-2 text-base sm:text-lg lg:text-xl whitespace-nowrap inline-flex items-center gap-1 sm:gap-2" key={product.id}>
             <span>{product.image}</span>
             <span>{product.nameBn}</span>
             <span>{product.today} টাকা/কেজি</span>
@@ -42,3 +44,4 @@ const Marquee = async () => {
 };
 
 export default Marquee;
+

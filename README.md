@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 BazarDor — বাজার দর
 
-## Getting Started
+**BazarDor** is a responsive web application that helps users explore the latest prices of essential products in Bangladesh. Users can browse products by category, compare prices across different markets, and track daily price changes in one place.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 📊 **Today's Market Prices** — Explore the latest prices of essential products.
+- 📈 **Price Change Tracking** — Identify products whose prices have increased or decreased.
+- 🛍️ **Product Categories** — Browse products through category-based navigation.
+- 🔍 **Product Details** — View individual product prices and price-change information.
+- 🏪 **Market Price Comparison** — Compare minimum, maximum, and average prices across markets.
+- ↕️ **Product Sorting** — Sort products by price and price changes.
+- 📱 **Responsive Design** — Browse the application on mobile, tablet, and desktop devices.
+- 🔐 **User Authentication** — Sign in, sign up, and access the profile page.
+- 📰 **Live Price Marquee** — View product prices and daily changes in a scrolling ticker.
+- 🇧🇩 **Bangla Interface** — Explore market information through a Bengali-language interface.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js** — React framework for building the web application.
+- **React** — Component-based user interface.
+- **TypeScript** — Type-safe development.
+- **Tailwind CSS** — Responsive styling and layout.
+- **DaisyUI** — UI styling components.
+- **Next.js Image** — Image optimization.
+- **React Marquee Text** — Scrolling market price ticker.
+- **REST API** — Fetching product, category, and market price data.
+- **Authentication Client** — User session and authentication functionality.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js
+- npm
+- Git
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
 
-## Deploy on Vercel
+   ```bash
+   git clone YOUR_REPOSITORY_URL
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Navigate to the project directory:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   cd your-project-folder
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🔗 API
+
+BazarDor uses the Programming Hero BazarDor API to retrieve product and category information.
+
+API base URL:  
+`https://openapi.programming-hero.com/api/bazardor`
+
+## 🎯 Project Goal
+
+The goal of BazarDor is to make essential product prices easier to explore and compare, helping users stay informed about market price changes in Bangladesh.
+
+## 👨‍💻 Developer
+
+**MD Ta Seen Arafat Nabil**
+
+Frontend Developer | React | Next.js
+
+---
+
+⭐ If you find this project useful, consider giving it a star on GitHub.
