@@ -16,11 +16,15 @@ const UserInfo = () => {
        <div>
            {
             user? <div className='flex flex-col items-center'> 
+                  <Link href={'/profile'}>
                   <Image className='rounded-full h-15 w-15' src={user?.image as string} alt='user pic' height={80} width={50}/>
+                  </Link>
                 <h2>{user.name}</h2>
                 <h2>{user.email}</h2>
                 <button onClick={handleSignOut} className='btn bg-red-800 text-white'>Sign Out</button>
-            </div> :  <div>
+            </div> 
+            :
+              <div>
              <Link href={'/signin'}>
                <button className='btn bg-white mx-2'>সাইন ইন</button>
             </Link>
